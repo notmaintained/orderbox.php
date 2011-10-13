@@ -40,7 +40,9 @@ Making API calls:
 
 	try
 	{
-		//TODO: example GET request
+		// Get account balance
+		$response = $orderbox('GET', '/billing/reseller-balance.json', array('reseller-id'=>'53557'));
+		echo "Your Account Balance is {$response['sellingcurrencysymbol']} {$response['sellingcurrencybalance']}";
 
 
 		try
