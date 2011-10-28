@@ -12,8 +12,7 @@
 		{
 			$url = ORDERBOX_HTTP_API_BASEURL.ltrim($path, '/');
 
-			if ('GET' == $method) $query_params = empty($params) ? $auth : array_merge($params, $auth);
-			else $query_params = array();
+			$query_params = empty($params) ? $auth : array_merge($params, $auth);
 
 			$query = orderbox_http_build_query($query_params);
 
