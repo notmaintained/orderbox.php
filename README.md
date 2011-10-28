@@ -6,7 +6,7 @@ PHP library for the ResellerClub and LogicBoxes HTTP API.
 ## Requirements
 
 * PHP 5.3 with [cURL support](http://php.net/manual/en/book.curl.php).
-* Register the IP addresses from where you will be making the HTTP API requests from the `Setting > API page` within your Control Panel.
+* Register the IP addresses from where you will be making the HTTP API requests from the `Setting > API` page within your Control Panel.
 
 
 ## Getting Started
