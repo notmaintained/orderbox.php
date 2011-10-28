@@ -41,7 +41,7 @@ Making API calls:
 	try
 	{
 		// Get account balance
-		$response = $orderbox('GET', '/billing/reseller-balance.json', array('reseller-id'=>'53557'));
+		$response = $orderbox('GET', '/billing/reseller-balance.json', array('reseller-id'=>'22222'));
 		echo "Your Account Balance is {$response['sellingcurrencysymbol']} {$response['sellingcurrencybalance']}";
 
 
