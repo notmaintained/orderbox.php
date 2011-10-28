@@ -47,8 +47,24 @@ Making API calls:
 
 		try
 		{
-			// All requests accept an optional fourth parameter, that is populated with the response headers.
-			//TODO: example POST request
+			// Signing up a new customer
+			$customer_id = $orderbox(
+				'POST',
+				'/customers/signup.json',
+				array(
+					'username'=>'email1@email.com',
+					'passwd'=>'password9',
+					'name'=>'name',
+					'company'=>'company',
+					'address-line-1'=>'address-line-1',
+					'city'=>'city',
+					'state'=>'state',
+					'country'=>'US',
+					'zipcode'=>'0000',
+					'phone-cc'=>'0',
+					'phone'=>'000000',
+					'lang-pref'=>'en'),
+				$response_headers); // All requests accept an optional fourth parameter, that is populated with the response headers.
 
 		}
 		catch (OrderboxApiException $e)
