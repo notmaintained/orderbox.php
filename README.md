@@ -3,6 +3,17 @@
 PHP library for the ResellerClub and LogicBoxes HTTP API.
 
 
+## Requirements
+
+### PHP
+
+orderbox.php requires PHP 5.3 with [cURL support](http://php.net/manual/en/book.curl.php).
+
+### Register your IP addresses
+
+Register the IP addresses from where you will be making the HTTP API requests from the `Setting > API page` within your Control Panel.
+
+
 ## Getting Started
 
 ### Download
@@ -12,11 +23,6 @@ Download the [latest version of orderbox.php](https://github.com/sandeepshetty/o
 $ curl -L http://github.com/sandeepshetty/orderbox.php/tarball/master | tar xvz
 $ mv sandeepshetty-orderbox.php-* orderbox.php
 ```
-
-### Register your IP addresses
-
-Register the IP addresses from where you will be making the HTTP API requests from the `Setting > API page` within your Control Panel.
-
 
 ### Require
 
@@ -35,7 +41,6 @@ Making API calls:
 ```php
 <?php
 
-	// For regular apps:
 	$orderbox = orderbox_api_client($userid, $password);
 
 	try
